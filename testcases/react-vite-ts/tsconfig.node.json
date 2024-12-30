@@ -9,6 +9,7 @@
 		"moduleResolution": "Bundler",
 		"allowImportingTsExtensions": true,
 		"isolatedModules": true,
+		"rewriteRelativeImportExtensions": true,
 		"moduleDetection": "force",
 		"noEmit": true,
 

@@ -5,18 +5,15 @@
 		"build": {
 			"dependsOn": ["^build"],
 			"inputs": ["$TURBO_DEFAULT$", ".env*"],
-			"outputs": ["dist/**/*"]
+			"outputs": ["dist/**", "esm/**"]
 		},
+		"//#check": {},
 		"clean": {
 			"cache": false
 		},
 		"coverage": {
 			"dependsOn": ["^build"],
-			"outputs": ["coverage/**/*"]
-		},
-		"dev": {
-			"cache": false,
-			"persistent": true
+			"outputs": ["coverage/**"]
 		},
 		"nuke": {
 			"cache": false,
@@ -24,6 +21,10 @@
 		},
 		"test": {
 			"dependsOn": ["^build"]
+		},
+		"w": {
+			"dependsOn": ["^build"],
+			"persistent": true
 		}
 	}
 }

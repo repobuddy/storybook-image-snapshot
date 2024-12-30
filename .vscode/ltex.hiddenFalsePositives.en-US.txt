@@ -1,1 +1,2 @@
 {"rule":"UPPERCASE_SENTENCE_START","sentence":"^\\Qstorybook-addon-vis\\E$"}
+{"rule":"UPPERCASE_SENTENCE_START","sentence":"^\\Qvitest-plugin-vis supports zero-config setup.\\E$"}

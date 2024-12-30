@@ -1,8 +1,14 @@
 {
 	"files": [],
+	"compilerOptions": {
+		"rewriteRelativeImportExtensions": true
+	},
 	"references": [
 		{
 			"path": "./packages/vis"
+		},
+		{
+			"path": "./packages/vitest-plugin-vis"
 		},
 		{
 			"path": "./testcases/react-vite-ts"

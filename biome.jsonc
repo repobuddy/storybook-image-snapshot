@@ -22,12 +22,15 @@
 				"useAltText": "off",
 				"useSemanticElements": "off"
 			},
+			"correctness": {
+				"useImportExtensions": "error"
+			},
 			"suspicious": {
 				"noArrayIndexKey": "off"
 			}
 		}
 	},
 	"organizeImports": {
-		"enabled": false
+		"enabled": true
 	}
 }

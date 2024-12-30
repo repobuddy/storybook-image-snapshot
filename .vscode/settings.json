@@ -1,4 +1,18 @@
 {
+	"[javascript]": {
+		"editor.codeActionsOnSave": {
+			"source.organizeImports.biome": "explicit"
+		},
+		"editor.defaultFormatter": "biomejs.biome",
+		"editor.formatOnSave": true
+	},
+	"[javascriptreact]": {
+		"editor.codeActionsOnSave": {
+			"source.organizeImports.biome": "explicit"
+		},
+		"editor.defaultFormatter": "biomejs.biome",
+		"editor.formatOnSave": true
+	},
 	"[json]": {
 		"editor.defaultFormatter": "biomejs.biome",
 		"editor.formatOnSave": true,
@@ -15,19 +29,17 @@
 		},
 		"editor.suggest.insertMode": "replace"
 	},
-	"[javascript]": {
-		"editor.defaultFormatter": "biomejs.biome",
-		"editor.formatOnSave": true
-	},
-	"[javascriptreact]": {
-		"editor.defaultFormatter": "biomejs.biome",
-		"editor.formatOnSave": true
-	},
 	"[typescript]": {
+		"editor.codeActionsOnSave": {
+			"source.organizeImports.biome": "explicit"
+		},
 		"editor.defaultFormatter": "biomejs.biome",
 		"editor.formatOnSave": true
 	},
 	"[typescriptreact]": {
+		"editor.codeActionsOnSave": {
+			"source.organizeImports.biome": "explicit"
+		},
 		"editor.defaultFormatter": "biomejs.biome",
 		"editor.formatOnSave": true
 	},
@@ -38,8 +50,10 @@
 		"divs",
 		"EISDIR",
 		"estree",
+		"nocheck",
 		"pathe",
 		"pixelmatch",
+		"pngjs",
 		"repobuddy",
 		"Resizer",
 		"shipit",
@@ -47,10 +61,31 @@
 		"ssim",
 		"testid",
 		"tsup",
+		"vite",
 		"Vitest"
 	],
 	"editor.codeActionsOnSave": {
 		"source.organizeImports.biome": "explicit"
 	},
-	"git-graph.dialog.general.referenceInputSpaceSubstitution": "Hyphen"
+	"git-graph.dialog.general.referenceInputSpaceSubstitution": "Hyphen",
+	"material-icon-theme.files.associations": {
+		"*.accept.ts": "test-ts",
+		"*.excalidraw": "maven",
+		"*.integrate.ts": "test-ts",
+		"*.spec.node.ts": "test-ts",
+		"*.study.ts": "test-ts",
+		"*.system.ts": "test-ts",
+		"*.unit.node.ts": "test-ts",
+		"*.unit.ts": "test-ts",
+		"vitest.config.node.ts": "vitest",
+		"vitest.config.playwright.ts": "vitest",
+		"vitest.config.webdriverio.ts": "vitest",
+		"vitest.setup.playwright.ts": "vitest",
+		"vitest.setup.webdriverio.ts": "vitest"
+	},
+	"typescript.experimental.updateImportsOnPaste": true,
+	"typescript.preferences.importModuleSpecifierEnding": "js",
+	"typescript.preferences.includePackageJsonAutoImports": "on",
+	"typescript.tsdk": "node_modules/typescript/lib",
+	"typescript.tsserver.web.projectWideIntellisense.enabled": true
 }

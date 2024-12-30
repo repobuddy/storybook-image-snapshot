@@ -1,6 +1,6 @@
+import { join } from 'node:path'
 import { storybookTest } from '@storybook/experimental-addon-test/vitest-plugin'
 import react from '@vitejs/plugin-react'
-import { join } from 'node:path'
 import { storybookVis } from 'storybook-addon-vis/vitest-plugin'
 import { defineConfig } from 'vitest/config'
 
@@ -14,7 +14,6 @@ export default defineConfig({
 			name: 'chromium',
 			provider: 'playwright',
 		},
-		globals: true,
 		include: [
 			// But we are including them here to cover the scenario that
 			// not all tests are stories.

@@ -40,7 +40,7 @@ jobs:
             ${{ runner.os }}-playwright-
 
       - name: Install playwright browsers
-        run: pnpx playwright install --with-deps chromium
+        run: pnpx playwright install --with-deps chromium firefox
         if: steps.cache-playwright.outputs.cache-hit != 'true'
 
       - name: Install Dependencies

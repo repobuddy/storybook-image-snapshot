@@ -1,4 +1,5 @@
 import type { Meta, StoryObj } from '@storybook/react'
+import { expect } from '@storybook/test'
 import { page } from 'storybook-addon-vis'
 import { Button } from './Button.js'
 

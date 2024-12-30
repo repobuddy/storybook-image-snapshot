@@ -1,0 +1,22 @@
+{
+	"compilerOptions": {
+		// "esModuleInterop": true,
+		// "experimentalDecorators": true,
+		"incremental": false,
+		"isolatedModules": true,
+		"jsx": "react-jsx",
+		"lib": ["ESNext", "DOM.Iterable", "DOM"],
+		"module": "ESNext",
+		"moduleResolution": "Bundler",
+		"outDir": "esm",
+		"rewriteRelativeImportExtensions": true,
+		// "noImplicitAny": true,
+		"rootDir": "src",
+		"skipLibCheck": true,
+		"strict": true,
+		"target": "ES2020",
+		"types": ["@vitest/browser/providers/playwright"],
+		"verbatimModuleSyntax": true
+	},
+	"include": ["src"]
+}

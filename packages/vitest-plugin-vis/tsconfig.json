@@ -1,0 +1,20 @@
+{
+	"compilerOptions": {
+		"isolatedModules": true,
+		"jsx": "react-jsx",
+		"lib": ["ESNext", "DOM.Iterable", "DOM"],
+		"module": "NodeNext",
+		"moduleDetection": "force",
+		"noUncheckedIndexedAccess": true,
+		"outDir": "esm",
+		"resolveJsonModule": true,
+		"rewriteRelativeImportExtensions": true,
+		"rootDir": "src",
+		"skipLibCheck": true,
+		"strict": true,
+		"target": "ES2020",
+		"types": ["@vitest/browser/providers/playwright", "vitest-browser-react"],
+		"verbatimModuleSyntax": true
+	},
+	"include": ["src"]
+}
