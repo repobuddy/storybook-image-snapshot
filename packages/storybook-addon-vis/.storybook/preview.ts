@@ -8,6 +8,9 @@ const preview: Preview = {
 				date: /Date$/,
 			},
 		},
+		docs: {
+			codePanel: true,
+		},
 	},
 	initialGlobals: {
 		background: { value: 'light' },
