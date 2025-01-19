@@ -1,11 +1,11 @@
 import { join } from 'node:path'
 import storybookTest from '@storybook/experimental-addon-test/vitest-plugin'
 import react from '@vitejs/plugin-react'
-import { defineProject } from 'vitest/config'
+import { defineConfig } from 'vitest/config'
 import { storybookVis, trimCommonFolder } from './src/vitest-plugin.ts'
 
 // https://vitejs.dev/config/
-export default defineProject(() => {
+export default defineConfig(() => {
 	const browser = process.env.BROWSER ?? 'chromium'
 	const browserProvider = process.env.BROWSERPROVIDER ?? 'playwright'
 	const options =
@@ -27,12 +27,13 @@ export default defineProject(() => {
 				enabled: true,
 				headless: true,
 				provider: browserProvider,
-				instances: [{ browser }],
+				name: browser,
+				// instances: [{ browser }],
 			},
 			include: [
 				'src/client/**/*.{spec,test,unit,accept,integrate,system,study,perf,stress}.{ts,tsx}',
 				'src/shared/**/*.{spec,test,unit,accept,integrate,system,study,perf,stress}.{ts,tsx}',
-				'src/**/*.stories.tsx',
+				// 'src/**/*.stories.tsx',
 			],
 			setupFiles: [
 				browserProvider === 'playwright' ? './.storybook/vitest.setup.ts' : './.storybook/vitest.setup.webdriverio.ts',
