@@ -92,7 +92,7 @@
 		"@types/react": "^18.2.65",
 		"@types/react-dom": "^18.2.21",
 		"@vitejs/plugin-react": "^4.2.1",
-		"@vitest/browser": "^3.0.0",
+		"@vitest/browser": "^3.0.4",
 		"@vitest/coverage-istanbul": "^3.0.0",
 		"@vitest/expect": "^3.0.0",
 		"boxen": "^8.0.1",

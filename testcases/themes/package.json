@@ -37,7 +37,7 @@
 		"@types/react": "^18.3.11",
 		"@types/react-dom": "^18.3.1",
 		"@vitejs/plugin-react": "^4.3.3",
-		"@vitest/browser": "^3.0.0",
+		"@vitest/browser": "^3.0.4",
 		"autoprefixer": "^10.4.20",
 		"globals": "^15.11.0",
 		"storybook": "^8.4.2",
