@@ -1,6 +1,6 @@
 {
 	"name": "vitest-plugin-vis",
-	"version": "2.0.0",
+	"version": "2.0.1",
 	"description": "Vitest visual testing plugin",
 	"keywords": [
 		"image-snapshot",
