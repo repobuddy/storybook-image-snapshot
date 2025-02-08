@@ -1,5 +1,11 @@
 # vitest-plugin-vis
 
+## 2.0.1
+
+### Patch Changes
+
+- [`24621e0`](https://github.com/repobuddy/storybook-addon-vis/commit/24621e0683bebc08d112d93c99e58d28e0dffb67) Thanks [@unional](https://github.com/unional)! - Update `type-plus`.
+
 ## 2.0.0
 
 ### Major Changes
