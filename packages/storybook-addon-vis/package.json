@@ -1,149 +1,148 @@
 {
-	"name": "storybook-addon-vis",
-	"version": "0.17.11",
-	"description": "Storybook Vitest visual testing addon",
-	"keywords": [
-		"image-snapshot",
-		"storybook-addons",
-		"vitest",
-		"visual-test",
-		"testing",
-		"test",
-		"browser-mode"
-	],
-	"repository": {
-		"type": "git",
-		"url": "https://github.com/repobuddy/storybook-image-snapshot",
-		"directory": "packages/storybook-addon-vis"
-	},
-	"license": "MIT",
-	"author": {
-		"name": "Homa Wong",
-		"email": "homawong@gmail.com",
-		"url": "https://github.com/unional"
-	},
-	"type": "module",
-	"exports": {
-		".": {
-			"types": "./dist/index.d.ts",
-			"import": "./dist/index.js",
-			"require": "./dist/index.cjs"
-		},
-		"./matcher": {
-			"types": "./dist/matcher.d.ts",
-			"import": "./dist/matcher.js"
-		},
-		"./preset": "./dist/preset.cjs",
-		"./preview": {
-			"types": "./dist/preview.d.ts",
-			"import": "./dist/preview.js"
-		},
-		"./vitest-setup": {
-			"types": "./dist/vitest-setup.d.ts",
-			"import": "./dist/vitest-setup.js"
-		},
-		"./vitest-plugin": {
-			"types": "./vitest-plugin.d.ts",
-			"import": "./dist/vitest-plugin.js"
-		},
-		"./package.json": "./package.json"
-	},
-	"types": "./dist/index.d.ts",
-	"files": [
-		"dist",
-		"src",
-		"*.js",
-		"*.d.ts",
-		"!**/*.{spec,test,unit,accept,integrate,system,perf,stress,stories,study}.*"
-	],
-	"scripts": {
-		"build": "tsup",
-		"build:sb": "storybook build",
-		"clean": "rimraf coverage dist esm *.tsbuildinfo vitest.*.timestamp*",
-		"cov": "vitest run --coverage",
-		"coverage": "vitest run --coverage",
-		"dev": "run-p build:watch w",
-		"nuke": "rimraf node_modules",
-		"prerelease": "zx scripts/prepublish-checks.js",
-		"sb": "storybook dev -p 6006",
-		"t:n": "vitest run -c vitest.config.node.ts",
-		"t:wb": "cross-env BROWSER=firefox BROWSERPROVIDER=webdriverio vitest run",
-		"test": "vitest run",
-		"test:type": "tsc --noEmit",
-		"v": "run-p build cov",
-		"w": "vitest",
-		"w:cov": "vitest --coverage",
-		"w:wb": "cross-env BROWSER=firefox BROWSERPROVIDER=webdriverio vitest"
-	},
-	"dependencies": {
-		"type-plus": "^8.0.0-beta.6",
-		"vitest-plugin-vis": "workspace:*"
-	},
-	"devDependencies": {
-		"@storybook/addon-essentials": "^8.4.2",
-		"@storybook/addon-interactions": "^8.4.2",
-		"@storybook/addon-links": "^8.4.2",
-		"@storybook/blocks": "^8.4.2",
-		"@storybook/experimental-addon-test": "^8.4.2",
-		"@storybook/react": "^8.4.2",
-		"@storybook/react-vite": "^8.4.2",
-		"@storybook/test": "^8.4.2",
-		"@testing-library/react": "^16.0.1",
-		"@types/react": "^18.2.65",
-		"@types/react-dom": "^18.2.21",
-		"@vitejs/plugin-react": "^4.2.1",
-		"@vitest/browser": "^3.0.0",
-		"@vitest/coverage-istanbul": "^3.0.0",
-		"@vitest/expect": "^3.0.0",
-		"boxen": "^8.0.1",
-		"cross-env": "^7.0.3",
-		"dedent": "^1.5.1",
-		"npm-run-all2": "^7.0.2",
-		"react": "^18.2.0",
-		"react-dom": "^18.2.0",
-		"storybook": "^8.4.2",
-		"tsup": "^8.3.5",
-		"typescript": "^5.7.2",
-		"vite": "^6.0.9",
-		"vitest-browser-react": "^0.0.4",
-		"webdriverio": "^9.5.7",
-		"zx": "^8.0.0"
-	},
-	"peerDependencies": {
-		"@types/pixelmatch": "^5.2.6",
-		"@vitest/browser": "^2 || ^3",
-		"storybook": "^8.3.0",
-		"vitest": "^2 || ^3"
-	},
-	"publishConfig": {
-		"access": "public"
-	},
-	"bundler": {
-		"exportEntries": [
-			"src/index.ts",
-			"src/matcher.ts",
-			"src/vitest-setup.ts"
-		],
-		"previewEntries": [
-			"src/preview.ts"
-		],
-		"nodeEntries": [
-			"./src/preset.ts"
-		]
-	},
-	"storybook": {
-		"displayName": "Storybook Vitest Visual Testing addon",
-		"supportedFrameworks": [
-			"react",
-			"vue",
-			"angular",
-			"web-components",
-			"ember",
-			"html",
-			"svelte",
-			"preact",
-			"react-native"
-		],
-		"icon": "https://github.com/organizations/repobuddy/settings/profile"
-	}
+  "name": "storybook-addon-vis",
+  "version": "0.17.11",
+  "description": "Storybook Vitest visual testing addon",
+  "keywords": [
+    "image-snapshot",
+    "storybook-addons",
+    "vitest",
+    "visual-test",
+    "testing",
+    "test",
+    "browser-mode"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/repobuddy/storybook-image-snapshot",
+    "directory": "packages/storybook-addon-vis"
+  },
+  "license": "MIT",
+  "author": {
+    "name": "Homa Wong",
+    "email": "homawong@gmail.com",
+    "url": "https://github.com/unional"
+  },
+  "type": "module",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js",
+      "require": "./dist/index.cjs"
+    },
+    "./matcher": {
+      "types": "./dist/matcher.d.ts",
+      "import": "./dist/matcher.js"
+    },
+    "./preset": "./dist/preset.cjs",
+    "./preview": {
+      "types": "./dist/preview.d.ts",
+      "import": "./dist/preview.js"
+    },
+    "./vitest-setup": {
+      "types": "./dist/vitest-setup.d.ts",
+      "import": "./dist/vitest-setup.js"
+    },
+    "./vitest-plugin": {
+      "types": "./vitest-plugin.d.ts",
+      "import": "./dist/vitest-plugin.js"
+    },
+    "./package.json": "./package.json"
+  },
+  "types": "./dist/index.d.ts",
+  "files": [
+    "dist",
+    "src",
+    "*.js",
+    "*.d.ts",
+    "!**/*.{spec,test,unit,accept,integrate,system,perf,stress,stories,study}.*"
+  ],
+  "scripts": {
+    "build": "tsup",
+    "build:sb": "storybook build",
+    "clean": "rimraf coverage dist esm *.tsbuildinfo vitest.*.timestamp*",
+    "cov": "vitest run --coverage",
+    "coverage": "vitest run --coverage",
+    "dev": "run-p build:watch w",
+    "nuke": "rimraf node_modules",
+    "prerelease": "zx scripts/prepublish-checks.js",
+    "sb": "storybook dev -p 6006",
+    "t:n": "vitest run -c vitest.config.node.ts",
+    "t:wb": "cross-env BROWSER=firefox BROWSERPROVIDER=webdriverio vitest run",
+    "test": "vitest run",
+    "test:type": "tsc --noEmit",
+    "v": "run-p build cov",
+    "w": "vitest",
+    "w:cov": "vitest --coverage",
+    "w:wb": "cross-env BROWSER=firefox BROWSERPROVIDER=webdriverio vitest"
+  },
+  "dependencies": {
+    "type-plus": "^8.0.0-beta.6",
+    "vitest-plugin-vis": "workspace:*"
+  },
+  "devDependencies": {
+    "@storybook/addon-essentials": "^8.5.3",
+    "@storybook/addon-links": "^8.5.3",
+    "@storybook/blocks": "^8.5.3",
+    "@storybook/experimental-addon-test": "^8.5.3",
+    "@storybook/react": "^8.5.3",
+    "@storybook/react-vite": "^8.5.3",
+    "@storybook/test": "^8.5.3",
+    "@testing-library/react": "^16.0.1",
+    "@types/react": "^18.2.65",
+    "@types/react-dom": "^18.2.21",
+    "@vitejs/plugin-react": "^4.2.1",
+    "@vitest/browser": "^3.0.0",
+    "@vitest/coverage-istanbul": "^3.0.0",
+    "@vitest/expect": "^3.0.0",
+    "boxen": "^8.0.1",
+    "cross-env": "^7.0.3",
+    "dedent": "^1.5.1",
+    "npm-run-all2": "^7.0.2",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "storybook": "^8.5.3",
+    "tsup": "^8.3.5",
+    "typescript": "^5.7.2",
+    "vite": "^6.0.9",
+    "vitest-browser-react": "^0.0.4",
+    "webdriverio": "^9.5.7",
+    "zx": "^8.0.0"
+  },
+  "peerDependencies": {
+    "@types/pixelmatch": "^5.2.6",
+    "@vitest/browser": "^2 || ^3",
+    "storybook": "^8.3.0",
+    "vitest": "^2 || ^3"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "bundler": {
+    "exportEntries": [
+      "src/index.ts",
+      "src/matcher.ts",
+      "src/vitest-setup.ts"
+    ],
+    "previewEntries": [
+      "src/preview.ts"
+    ],
+    "nodeEntries": [
+      "./src/preset.ts"
+    ]
+  },
+  "storybook": {
+    "displayName": "Storybook Vitest Visual Testing addon",
+    "supportedFrameworks": [
+      "react",
+      "vue",
+      "angular",
+      "web-components",
+      "ember",
+      "html",
+      "svelte",
+      "preact",
+      "react-native"
+    ],
+    "icon": "https://github.com/organizations/repobuddy/settings/profile"
+  }
 }
